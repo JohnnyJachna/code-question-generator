@@ -1,6 +1,6 @@
 import "react";
 import { useState, useEffect } from "react";
-import { MCQChallenge } from "../challnge/MCQChallenge.jsx";
+import { MCQChallenge } from "../challenge/MCQChallenge.jsx";
 
 export function HistoryPanel() {
   const [history, setHistory] = useState([]);
@@ -8,7 +8,7 @@ export function HistoryPanel() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetchHistory;
+    fetchHistory();
   }, []);
 
   const fetchHistory = async () => {
