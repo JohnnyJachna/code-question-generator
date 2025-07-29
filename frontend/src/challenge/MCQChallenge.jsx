@@ -1,7 +1,7 @@
 import "react";
 import { useState } from "react";
 
-export function MCQChallenge(challenge, showExplanation = false) {
+export function MCQChallenge({challenge, showExplanation = false}) {
   const [selectedOption, setSelectedOption] = useState(null);
   const [shouldShowExplanation, setShouldShowExplanation] =
     useState(showExplanation);
@@ -35,7 +35,7 @@ export function MCQChallenge(challenge, showExplanation = false) {
       <p>
         <strong>Difficulty</strong>: {challenge.difficulty}
       </p>
-      <p className="challenge-title">{challenge.titile}</p>
+      <p className="challenge-title">{challenge.title}</p>
       <div className="options">
         {options.map((option, index) => (
           <div
