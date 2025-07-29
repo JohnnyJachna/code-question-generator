@@ -33,12 +33,12 @@ def create_challenge(
     explanation: str
 ):
   db_challenge = models.Challenge(
-    difficulty: difficulty,
-    created_by: created_by,
-    title: title,
-    options: options,
-    correct_answer_id: correct_answer_id,
-    explanation: explanation
+    difficulty=difficulty,
+    created_by=created_by,
+    title=title,
+    options=options,
+    correct_answer_id=correct_answer_id,
+    explanation=explanation
   )
   db.add(db_challenge)
   db.commit()
