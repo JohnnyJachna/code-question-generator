@@ -8,8 +8,8 @@ fastapi = "*"
 uvicorn = "*"
 sqlalchemy = "*"
 python-dotenv = "*"
-clerk-sdk-python = "*"
 openai = "*"
+clerk-backend-api = "*"
 
 [dev-packages]
 
